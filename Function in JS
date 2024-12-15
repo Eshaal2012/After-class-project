@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Sync await</h2>
+        <h3>Change values in code to multiply different numbers</h3>
+        <h1 id="result"></h1>
+        <script>
+            async function product (a,b) {
+                let response = await a*b
+                display (response);
+            }
+            function display(some) {
+              document.getElementById("result").innerHTML=some;
+            }
+            product(5,10);
+        </script>
+    </body>
+</html>
