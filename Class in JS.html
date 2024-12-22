@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
     <body>
-    <h2>Javascript class inheritance</h2>
-    <p id="details"></p>
-    <p id="greetings"></p>
-    <script>
-        class Student() {
-            constructor(name) {
-                this.studentName=name;
-            }
-            static hello() {
-                return "Hello";
-            }
-            present() {
-                'My name is ' +this.studentName;
-            }
-        }
-    </script>
+        <h2>Javascript class</h2>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <script>
+            class student  {
+             constructor (name,year) {
+             this.name=name;
+             this.year=year;
+             }
+             age() {
+                let date=new Date;
+                return date.getFullYear()-this.year;
+             }
+            }   
+            student1=new student("Eshaal",2012)
+            document.getElementById("student1").innerHTML="My name is" + student1.name + "I was born in" + student1.year +"And my age is " + student1.age();
+        </script>
     </body>
 </html>
